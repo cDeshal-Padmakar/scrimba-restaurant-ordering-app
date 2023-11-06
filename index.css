@@ -1,0 +1,208 @@
+@font-face {
+    font-family: smythe;
+    src: url("./assets/Smythe-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: smythe;
+    background-color: #fff;
+}
+
+/* typography */
+
+h1, h3 {
+    margin: 0 0 4px 0;
+}
+
+h2, h4, h5 {
+    margin: 0;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p {
+    margin: 0 0 8px;
+    color: #8B8B8B;
+}
+
+
+/* utility class */
+
+.flex-last-child {
+    margin: 0 0 0 auto;
+}
+
+
+/* LAYOUT */
+
+
+header {
+    display: block;
+    color: white;
+    padding: 45px 0;
+    background-image: url("./assets/headerBg.jpg");
+    background-size: cover;
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 45px;
+    box-sizing: border-box;
+}
+
+
+/* food list  */
+
+.food-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.emoji {
+    font-size: 80px;
+}
+
+.add-btn {
+    color: #3C3C3C;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    background: none;
+    padding: 0 14px 5px;
+    border-radius: 50%;
+    border: 2px solid #DEDEDE;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* order list */
+
+.order-list-heading {
+    text-align: center;
+    padding: 45px 0 55px;
+}
+
+.order-item-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.remove-btn {
+    color: #BBB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.total-price-container {
+    display: flex;
+    border-top: 3px solid #393333;
+    padding: 15px 0 55px;
+    margin-top: 30px;
+}
+
+.complete-order-btn {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    width: 100%;
+    padding: 18px 0;
+    background: #16DB99;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+
+/* pay modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 420px;
+    height: 510px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 60px 30px rgba(95, 95, 95, 0.2) ;
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.modal-heading {
+    text-align: center;
+    margin: 45px 0;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.modal-form input {
+    color: #757575;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 15px 25px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+}
+
+.modal-form button {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+    background: #16DB99;
+    border: none;
+    padding: 23px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+}
+
+.after-order-container {
+    display: none;
+    color: #065F46;
+    border-radius: 3px;
+    background: #ECFDF5;
+    padding: 50px 0;
+    text-align: center;
+    margin: 45px 0;
+}

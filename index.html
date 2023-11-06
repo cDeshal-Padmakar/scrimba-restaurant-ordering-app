@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <!-- mobil view -->
+        <meta name="viewport" content="width=500, initial-scale=1.0">
+        <!-- smythe font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <!-- inter font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Jimmy's Diner</h1>
+                <h4>The best burgers and pizza in town</h4>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="food-list-container" id="food-list-container"></div>
+                <div class="order-list-container" id="order-list-container"></div>
+                <div class="after-order-container" id="after-order-container"></div>
+            </div>
+        </main>
+
+        <div class="modal" id="modal">
+            <div class="modal-heading">
+                <h4>Enter card details</h4>
+            </div>
+            <form class="modal-form" id="modal-form">
+                <input 
+                    type="text"
+                    name="fullName"
+                    placeholder="Enter your name"
+                    required
+                    >
+                <input 
+                    type="text" 
+                    name="cardNumber" 
+                    placeholder="Enter card number"
+                    required
+                    >
+                <input 
+                    type="text"
+                    name="cvv" 
+                    placeholder="Enter CVV"
+                    required
+                    >
+                <button type="submit" id="submit">Pay</button>
+
+            </form>
+        </div>
+
+
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
